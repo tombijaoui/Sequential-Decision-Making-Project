@@ -84,10 +84,7 @@ The code replicates the experimental results from the paper. The goal is to crea
 
 
 ## Running Instructions
-This repository contains the code and instructions to run the experiment presented in the associated paper. Please follow the steps below to set up and run the experiment.
-
-### Prerequisites
-Before running the experiment, you need to install all the required Python packages.
+This repository contains the code and instructions to run the experiment presented in the associated paper. Please follow the steps below to set up and run the experiment
 
 1. Download and install the dependencies by running the following command in your terminal:
 `pip install -r requirements.txt`
