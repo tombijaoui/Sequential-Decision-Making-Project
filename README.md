@@ -34,9 +34,10 @@
 ---
 
 ## Project Overview
-Emphasizing the right core values are crucial in the business world, especially when applying for a job. It can be challenging to determine which values to emphasize, how to subtly convey them, establish a clear order of priorities, and recognize a company’s recruitment patterns. That's why we developed On Target, a  big data tool that aims to give it a solution. This system generates tailored guidelines that enable candidates to highlight the skills and values most valued by the specific company they are targeting using Statistical and Machine Learning methods.
+Our project and implementation is based on the article of <blockquote><a href="https://proceedings.neurips.cc/paper_files/paper/2019/hash/88fee0421317424e4469f33a48f50cb0-Abstract.html">Blocking Bandits</a> by Soumya Basu, Rajat Sen, Sujay Sanghavi and Sanjay Shakkottai.</blockquote> This sub-domain represents a new variation in the multi-armed bandit (MAB) problem, where each arm, once played, becomes unavailable or blocked for a certain number of time slots before it can be played again. This models real-world scenarios such as job scheduling, recommendation systems, or resource allocation where actions or resources cannot be reused immediately due to limitations. Blocking bandits introduce significant complexity into decision-making algorithms, particularly in balancing exploration and exploitation. Traditional MAB problems focus on maximizing cumulative rewards while learning the best arm to play. However, with blocking constraints, the problem shifts—decisions made now affect future availability, making it harder to maintain an optimal strategy over time​.
 
-## Implementing Methods
+
+## About the code
 
 * Data Preprocessing
 * Feature Engineering
@@ -48,7 +49,7 @@ Emphasizing the right core values are crucial in the business world, especially 
 
 ---
 
-## Project's Files
+## Implemented Classes
 - **Model Interpretability**
   - `Model_Interpretability_Notebook`: Analyzes feature importance via Random Forest Model Interpretability Techniques.
 
@@ -63,7 +64,7 @@ Emphasizing the right core values are crucial in the business world, especially 
 
 ---
 
-## On Target Tool
+## Running Instructions
 Here, we were able to learn the key values for each company, the inherent values of each profile, and understand their leel of importance for each feature. Finally, the system generates the instructions the candidates has to follow to enhance his profil towards a specific company that he targeted.
 
 Example Instruction:
@@ -71,7 +72,7 @@ Example Instruction:
 
 ---
 
-## Running the On Target Notebook
+## Results & Comments
 
 - **Commented Parts**  
   - Some sections are commented out for *testing purposes*, mainly to sample a small portion of datasets for **faster results**.  
