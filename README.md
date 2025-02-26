@@ -23,18 +23,24 @@
 <details open>
 <summary><strong>Table of Contents</strong> ⚙️</summary>
 
-1. [Project Overview](#project-overview)  
-2. [About the code](#about-the-code)  
-3. [Implemented Classes](#implemented--classes)
-4. [Running Instructions](#running-instructions)  
-5. [Results & Comments](#results-and-comments)  
+1. [Link of the Article](#link-of-the-article)
+2. [Project Overview](#project-overview)  
+3. [About the code](#about-the-code)  
+4. [Implemented Classes](#implemented--classes)
+5. [Running Instructions](#running-instructions)  
+6. [Results & Comments](#results-and-comments)  
 
 </details>
 
 ---
 
+## Link of the article
+Our project and implementation is based on the following article:
+<blockquote>
+  <a href="https://proceedings.neurips.cc/paper_files/paper/2019/hash/88fee0421317424e4469f33a48f50cb0-Abstract.html">Blocking Bandits</a> by Soumya Basu, Rajat Sen, Sujay Sanghavi and Sanjay Shakkottai.</blockquote>
+
 ## Project Overview
-Our project and implementation is based on the article of <blockquote><a href="https://proceedings.neurips.cc/paper_files/paper/2019/hash/88fee0421317424e4469f33a48f50cb0-Abstract.html">Blocking Bandits</a> by Soumya Basu, Rajat Sen, Sujay Sanghavi and Sanjay Shakkottai.</blockquote> This sub-domain represents a new variation in the multi-armed bandit (MAB) problem, where each arm, once played, becomes unavailable or blocked for a certain number of time slots before it can be played again. This models real-world scenarios such as job scheduling, recommendation systems, or resource allocation where actions or resources cannot be reused immediately due to limitations. Blocking bandits introduce significant complexity into decision-making algorithms, particularly in balancing exploration and exploitation. Traditional MAB problems focus on maximizing cumulative rewards while learning the best arm to play. However, with blocking constraints, the problem shifts—decisions made now affect future availability, making it harder to maintain an optimal strategy over time​.
+Blocking Bandits represent a new variation in the multi-armed bandit (MAB) problem, where each arm, once played, becomes unavailable or blocked for a certain number of time slots before it can be played again. This models real-world scenarios such as job scheduling, resource allocation where actions or resources cannot be reused immediately due to limitations. Blocking bandits introduce significant complexity into decision-making algorithms, particularly in balancing exploration and exploitation. Traditional MAB problems focus on maximizing cumulative rewards while learning the best arm to play. However, with blocking constraints, the problem shifts—decisions made now affect future availability, making it harder to maintain an optimal strategy over time​.
 
 
 ## About the code
