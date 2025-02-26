@@ -13,6 +13,10 @@
   Faculty of Data Science and Decisions
 </p>
 
+<h1 align="center">
+  <img src="https://imgur.com/a/HdXO5OS" alt="MAB draw" height="100">
+</h1>
+
 ---
 
 <details open>
