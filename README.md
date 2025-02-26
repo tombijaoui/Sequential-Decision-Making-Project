@@ -44,20 +44,17 @@ Blocking Bandits represent a new variation in the multi-armed bandit (MAB) probl
 
 
 ## About the code
+The code replicates the experimental results from the paper. The goal is to create a virtual environment for blocking bandits by reproducing the different simulations described in Section V of the paper. We replicated three types of simulations: the first involves arms with uniformly sampled short delays, the second with arms having uniformly sampled long delays, and the third with fixed delays. The code runs the two algorithms presented in the paper, namely Oracle Greedy and UCB Greedy, across these different simulations. It then generates graphs showing the evolution of cumulative rewards and cumulative regret for each algorithm depending on the type of simulation.
 
-* Data Preprocessing
-* Feature Engineering
-* Pre-trained Models from Hugging Face
-* Statistical Tests for Significance Inference
-* Machine Learning Model for Model Interpretability
-* NLP Keyword Extraction Techniques
-* LLM to Generate Instructions
-
----
 
 ## Implemented Classes
-- **Model Interpretability**
-  - `Model_Interpretability_Notebook`: Analyzes feature importance via Random Forest Model Interpretability Techniques.
+- **bandits.py**
+  - BanditArm: This class represents a **bandit arm**:
+
+    - `__init__(self, mean_reward)`: Initializes the bandit arm with a given **mean reward**. This method sets up the necessary parameters for the arm, such as its reward distribution characteristics (e.g., the expected reward or mean).
+
+    - `sample_reward(self)`: Simulates pulling the arm by **sampling a reward** based on the arm’s reward distribution. The method returns a reward when the arm is selected, typically sampled from a distribution (e.g., Gaussian or uniform) centered around the arm’s mean reward.
+.
 
 - **On Target tool**
   - `On_Target_Notebook`: Core notebook generating guidelines.
