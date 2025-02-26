@@ -83,26 +83,29 @@ The code replicates the experimental results from the paper. The goal is to crea
   - `__main__`: Parses the arguments, sets up the seed, and runs the deterministic delays simulations.
 
 
-
-
-- **On Target tool**
-  - `On_Target_Notebook`: Core notebook generating guidelines.
-  - `example_generated_instructions`: output example showing how the tool provides instructions.
-
-- **Scraping**
-  - `Scraping_Comparably`: Code to scrape data from [Comparably](https://www.comparably.com).
-  - `Scraping_Company_Websites`: Methods for company website scraping.
-  - `Sample_CSV_Scraped_Data`: Example CSV containing raw scraped data.
-
----
-
 ## Running Instructions
-Here, we were able to learn the key values for each company, the inherent values of each profile, and understand their leel of importance for each feature. Finally, the system generates the instructions the candidates has to follow to enhance his profil towards a specific company that he targeted.
+This repository contains the code and instructions to run the experiment presented in the associated paper. Please follow the steps below to set up and run the experiment.
 
-Example Instruction:
-> “Highlight your team collaboration skills more prominently; emphasize your adaptability and willingness to learn.”
+### Prerequisites
+Before running the experiment, you need to install all the required Python packages.
 
----
+1. Download and install the dependencies by running the following command in your terminal:
+`pip install -r requirements.txt`
+
+2. Run the following command in your terminal to execute the experiment:
+`python "your_local_path"/project_files/main.py -K 20 -T 10000 -seed 42 -fixed_delay 10 -num_sim 250`
+Those hyperparameters match exactly those of the paper's experiment.
+
+4. You can modify the values of the following parameters to generate different simulations:
+
+- `-K`: The number of simulations to run. For example, `-K 20` will run 20 simulations.
+- `-T`: The time duration for each simulation in arbitrary units. For example, `-T 10000` will run each simulation for 10,000 units of time.
+- `-seed`: The random seed for reproducibility. For example, `-seed 42` will set the seed to 42.
+- `-fixed_delay`: A fixed delay between events in the simulation. For example, `-fixed_delay 10` sets a fixed delay of 10 units.
+- `-num_sim`: The number of individual simulations to run. For example, `-num_sim 250` will run 250 simulations.
+
+Feel free to adjust these values to explore different scenarios or to generate alternative results based on your preferences.
+
 
 ## Results & Comments
 
