@@ -24,12 +24,10 @@
 <summary><strong>Table of Contents</strong> ⚙️</summary>
 
 1. [Project Overview](#project-overview)  
-2. [Implementing Methods](#implementing--methods)  
-3. [Project's Files](#projects-files)  
-4. [On Target Tool](#on-target-tool)  
-5. [Model Interpretability](#model-interpretability)  
-6. [Scraping](#scraping)  
-7. [Links](#links)  
+2. [About the code](#about-the-code)  
+3. [Implemented Classes](#implemented--classes)
+4. [Running Instructions](#running-instructions)  
+5. [Results & Comments](#results-and-comments)  
 
 </details>
 
