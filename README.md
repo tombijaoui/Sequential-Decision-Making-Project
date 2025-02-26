@@ -93,7 +93,8 @@ Before running the experiment, you need to install all the required Python packa
 `pip install -r requirements.txt`
 
 2. Run the following command in your terminal to execute the experiment:
-```python "your_local_path"/project_files/main.py -K 20 -T 10000 -seed 42 -fixed_delay 10 -num_sim 250```
+```python
+"your_local_path"/project_files/main.py -K 20 -T 10000 -seed 42 -fixed_delay 10 -num_sim 250
 Those hyperparameters match exactly those of the paper's experiment.
 
 4. You can modify the values of the following parameters to generate different simulations:
