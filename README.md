@@ -49,12 +49,41 @@ The code replicates the experimental results from the paper. The goal is to crea
 
 ## Implemented Classes
 - **bandits.py**
-  - BanditArm: This class represents a **bandit arm**:
+  - ### BanditArm Class:
+    - `__init__(self, mean_reward)`: Initializes the bandit arm with the given mean reward and tracks the number of uses.
+    - `__repr__(self)`: Returns a string representation of the bandit arm's mean reward.
+    - `__eq__(self, other)`: Checks if two bandit arms have the same mean reward.
+    - `sample_reward(self)`: Samples a binary reward from a binomial distribution based on the arm’s mean reward.
 
-    - `__init__(self, mean_reward)`: Initializes the bandit arm with a given **mean reward**. This method sets up the necessary parameters for the arm, such as its reward distribution characteristics (e.g., the expected reward or mean).
+  - ### BlockingBanditArm Class (inherits from BanditArm):
+    - `__init__(self, mean_reward, blocking_delay)`: Initializes a blocking bandit arm with a mean reward and a blocking delay.
+    - `__repr__(self)`: Returns a string representation of the blocking bandit arm, including its blocking delay.
+    - `__eq__(self, other)`: Checks if two blocking bandit arms have the same mean reward and blocking delay.
+    - `sample_reward(self)`: Samples a reward if the arm is available, otherwise returns 0.
 
-    - `sample_reward(self)`: Simulates pulling the arm by **sampling a reward** based on the arm’s reward distribution. The method returns a reward when the arm is selected, typically sampled from a distribution (e.g., Gaussian or uniform) centered around the arm’s mean reward.
-.
+- **simulations.py**
+  - ### BlockingBanditSimulation Class:
+
+    - `__init__(self, K, T, sim_type, fixed_delays, seed)`: Initializes the simulation with the number of arms, horizon, type of simulation, fixed delays, and a random seed.
+    - `generate_bandits(self)`: Generates bandit arms based on the type of simulation (small delays, large delays, or fixed delays).
+    - `oracle_greedy_algorithm(self)`: Selects the best available arm based on the oracle greedy algorithm and updates its state.
+    - `UCB_greedy_algorithm(self, timestamp)`: Implements the UCB greedy algorithm, selecting arms and updating their state based on the UCB index.
+    - `update_unavailable_arms(self)`: Decreases the blocking delay countdown for unavailable arms and makes them available when the delay ends.
+    - `simulate(self)`: Runs the simulation for T time steps, returning the cumulative rewards and the arms chosen by both algorithms.
+    - `calculate_cumulative_regret(self, ucb_arms)`: Computes the cumulative regret for the UCB algorithm.
+    - `reset_simulation(self)`: Resets the state of all arms, making them available for reuse.
+    - `calculate_k_star(self)`: Calculates the optimal number of arms, `K*`, based on the sum of inverse delays.
+    - `calculate_k_g(self, oracle_chosen_arms)`: Computes `K_g`, the number of arms used by the Oracle Greedy algorithm.
+
+- **main.py**
+  - `parse_arguments()`: Parses the command-line arguments such as the number of arms, rounds, fixed delay, number of simulations, and seed.
+  - `plot_graph_cumulative_rewards(simulation_types, results_values, algorithms, T, k_stars_types, k_g_types)`: Plots the cumulative rewards for different algorithms and simulation types.
+  - `plot_graph_cumulative_regrets(simulation_types, regrets_values, T, k_stars_types, k_g_types)`: Plots the cumulative regrets for the UCB algorithm across different simulation types.
+  - `deterministic_delays_simulations(simulation_types, K, T, fixed_delays, num_sims, seed)`: Runs the simulations for different types of delays and collects results on rewards and regrets.
+  - `__main__`: Parses the arguments, sets up the seed, and runs the deterministic delays simulations.
+
+
+
 
 - **On Target tool**
   - `On_Target_Notebook`: Core notebook generating guidelines.
