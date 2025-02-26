@@ -13,9 +13,9 @@
   Faculty of Data Science and Decisions
 </p>
 
-<h1 align="left">
+<h1 align="center">
   <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/Pictures%20MAB/Crazy%20Squid%20MAB.png" alt="Crazy Squid MAB" height="200">
-  <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/Pictures%20MAB/Squid%20MAB%20Distributions.png" alt="Squid MAB Distribution" height="200">
+  <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/Pictures%20MAB/MAB%20Theory.png" alt="MAB Theory" height="200">
 </h1>
 
 ---
