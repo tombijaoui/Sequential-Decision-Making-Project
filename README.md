@@ -109,8 +109,8 @@ Feel free to adjust these values to explore different scenarios or to generate a
 ## Results & Comments
 Here are the graphs generated from the simulation:
 <h1 align="center">
-  <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/pictures_MAB/Cumulative%20Rewards.png" alt="Cumulative Rewards" height="300">
-  <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/pictures_MAB/Cumulative%20Regrets.png" alt="Cumulative Regrets" height="300">
+  <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/pictures_MAB/Cumulative%20Rewards.png" alt="Cumulative Rewards" height="350">
+  <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/pictures_MAB/Cumulative%20Regrets.png" alt="Cumulative Regrets" height="350">
 </h1>
 
 1. **Cumulative Reward**: 
