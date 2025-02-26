@@ -14,7 +14,7 @@
 </p>
 
 <h1 align="center">
-  <img src="https://imgur.com/a/HdXO5OS" alt="MAB draw" height="100">
+  <img src="https://github.com/tombijaoui/Sequential-Decision-Making-Project/blob/main/Pictures%20MAB/Crazy%20Squid%20MAB.png" alt="Crazy Squid MAB" height="100">
 </h1>
 
 ---
