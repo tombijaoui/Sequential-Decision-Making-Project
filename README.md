@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <em>Deterministic & Stochastic Blocking Bandits</em>
+  <em>Blocking Bandits</em>
 </p>
 
 <p align="center">
