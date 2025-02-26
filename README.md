@@ -26,9 +26,9 @@
 1. [Link of the Article](#link-of-the-article)
 2. [Project Overview](#project-overview)  
 3. [About the code](#about-the-code)  
-4. [Implemented Classes](#implemented--classes)
+4. [Implemented Classes](#implemented-classes)
 5. [Running Instructions](#running-instructions)  
-6. [Results & Comments](#results-and-comments)  
+6. [Results & Comments](#results-&-comments)  
 
 </details>
 
