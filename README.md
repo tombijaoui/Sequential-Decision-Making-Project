@@ -87,7 +87,8 @@ The code replicates the experimental results from the paper. The goal is to crea
 This repository contains the code and instructions to run the experiment presented in the associated paper. Please follow the steps below to set up and run the experiment
 
 1. Download and install the dependencies by running the following command in your terminal:
-`pip install -r requirements.txt`
+```pip install -r requirements.txt
+```
 
 2. Run the following command in your terminal to execute the experiment:
 ```python
